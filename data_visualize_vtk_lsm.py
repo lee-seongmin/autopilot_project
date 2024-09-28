@@ -6,7 +6,7 @@ import os
 base_dir = 'C:/Users/LSM/Desktop/class_mobility_A/autopilot/3d_mod_av_db'  # 데이터의 기본 디렉토리 경로
 labels_dir = os.path.join(base_dir, 'labels')  # 라벨 파일이 저장된 디렉토리
 points_dir = os.path.join(base_dir, 'points')  # 포인트 클라우드 파일이 저장된 디렉토리
-output_dir = os.path.join(base_dir, 'visualization_vtk_lsm')  # 시각화된 이미지를 저장할 디렉토리
+output_dir = os.path.join(base_dir, 'visualization_vtk_lsm_black')  # 시각화된 이미지를 저장할 디렉토리
 
 # 출력 폴더가 없으면 생성
 os.makedirs(output_dir, exist_ok=True)  # 출력 디렉토리가 존재하지 않으면 생성
@@ -137,7 +137,7 @@ def visualize_with_vtk(points, labels, output_image_path):
     camera.SetViewUp(0, 0, 1)  # 카메라 상단 방향 설정
     camera.SetClippingRange(0.1, 1000)  # 클리핑 범위 설정
 
-    renderer.SetBackground(1, 1, 1)  # 배경색 설정 (검정)
+    renderer.SetBackground(0, 0, 0)  # 배경색 설정 (검정)
     renderer.ResetCameraClippingRange()  # 카메라 클리핑 범위 재설정
 
     # 범례 추가 (오른쪽 하단에 배치)

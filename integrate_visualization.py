@@ -2,7 +2,7 @@ import cv2
 import os
 
 # 이미지 파일들이 있는 폴더 경로 설정
-image_dir = 'C:/Users/LSM/Desktop/class_mobility_A/autopilot/3d_mod_av_db/visualization_vtk_lsm'  # 이미지 파일들이 있는 디렉토리 경로
+image_dir = 'C:/Users/LSM/Desktop/class_mobility_A/autopilot/3d_mod_av_db/visualization_vtk_lsm_black'  # 이미지 파일들이 있는 디렉토리 경로
 output_video_dir = 'C:/Users/LSM/Desktop/class_mobility_A/autopilot'  # 비디오 파일을 저장할 디렉토리 경로
 output_video_name = 'visualization_vtk_lsm_fps_down.mp4'  # 생성할 비디오 파일의 이름
 output_video_path = os.path.join(output_video_dir, output_video_name)  # 전체 비디오 파일 경로 설정
